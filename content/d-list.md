@@ -14,7 +14,7 @@ Inspired by [Chip's list](https://huyenchip.com/list-100/) here.
 1. Get a pet dog
 2. Visit Paris
 3. Live in another country
-4. Get a PhD (in CS, Neuroscience)
+4. Get a PhD (in CS or Cognitive Science)
 5. Scuba Dive
 6. Learn to Ski
 7. Fly Airplane
