@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ML Theory on Venky&#39;s Blog</title>
+    <link>https://kovenky.github.io/mltheory/</link>
+    <description>Recent content in ML Theory on Venky&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2023, Venky.</copyright>
+    <lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kovenky.github.io/mltheory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fun Intro to K-NN Algorithm</title>
+      <link>https://kovenky.github.io/ml-theory/2021-06-15-knn-intro/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kovenky.github.io/ml-theory/2021-06-15-knn-intro/</guid>
+      <description>Machine Learning Nuggets: A fun Introduction to K-NN Algorithm A girl from an orthodox family loved a boy while in college.
+She informed her parents about this relation and expressed interest that she would like to marry him.
+She shared all the details about the boy to her parents that she knew.
+After some usual family drama, parents agreed to the wedding but with one condition that only if the boy passes background check.</description>
+    </item>
+    
+  </channel>
+</rss>
