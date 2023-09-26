@@ -1,9 +1,8 @@
 +++
-title = 'About'
-[menu]
-[[menu.main]]
-  weight = 10
-
+title = "About"
+url='/about'
+[menu.main]
+weight = 40
 +++
 
 {{< figure src="https://raw.githubusercontent.com/kovenky/kovenky.github.io/master/static/images/my_pic.jpeg" alt="image" width="200px">}}

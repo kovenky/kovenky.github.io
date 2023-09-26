@@ -1,9 +1,8 @@
 +++
-title = 'La Liste'
-[menu]
-[[menu.main]]
-  weight = 30
-
+title = "D-List"
+url='/laliste'
+[menu.main]
+weight = 30
 +++
 
 ## La liste
@@ -32,4 +31,4 @@ Inspired by [Chip's list](https://huyenchip.com/list-100/) here.
 19. Visit Mecca
 20. Visit Germany
 21. Travel to 50 countries
-22. Learn to speak Spanish
+22. Learn to speak Spanish 

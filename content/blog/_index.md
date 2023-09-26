@@ -1,9 +1,6 @@
 +++
-title = 'Tech Blog'
-url = '/'
-
-[menu]
-[[menu.main]]
-  weight = 0
-
+title = "Blog"
+url='/'
+[menu.main]
+weight = 10
 +++

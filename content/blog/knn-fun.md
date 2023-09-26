@@ -1,7 +1,14 @@
 +++
-date = '2021-01-19T00:00:00Z'
+date = '2021-01-19T06:09:46-04:00'
 title = 'Fun Intro to K-NN Algorithm'
+#
+# description is optional
+#
+# description = "An optional description for SEO. If not provided, an automatically created summary will be used."
+
+tags = []
 +++
+
 
 ## Machine Learning Nuggets: A fun Introduction to K-NN Algorithm
 
