@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://kovenky.github.io/images/favicon.png" />
+<title>Linear Regression : A Comprehensive Overview  | Venky&#39;s Blog</title>
+<meta name="title" content="Linear Regression : A Comprehensive Overview " />
+<meta name="description" content="Introduction Linear regression is a basic machine learning algorithm used for supervised learning tasks involving prediction and forecasting. It is used to model the relationship between a dependent variable (target variable) and one or more independent variables (features/predictors) by fitting a linear equation to the observed data.
+Sample Input The input to a linear regression model consists of:
+A dataset with one or more independent variables (X) and a continuous target variable (y) The data is split into training and test sets The training data is used to train the model i." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Linear Regression : A Comprehensive Overview " />
+<meta property="og:description" content="Introduction Linear regression is a basic machine learning algorithm used for supervised learning tasks involving prediction and forecasting. It is used to model the relationship between a dependent variable (target variable) and one or more independent variables (features/predictors) by fitting a linear equation to the observed data.
+Sample Input The input to a linear regression model consists of:
+A dataset with one or more independent variables (X) and a continuous target variable (y) The data is split into training and test sets The training data is used to train the model i." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kovenky.github.io/2021/02/20/linear-regression-a-comprehensive-overview/" /><meta property="og:image" content="https://kovenky.github.io/images/share.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2021-02-20T06:09:46-04:00" />
+<meta property="article:modified_time" content="2021-02-20T06:09:46-04:00" /><meta property="og:site_name" content="Venky" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://kovenky.github.io/images/share.png"/>
+
+<meta name="twitter:title" content="Linear Regression : A Comprehensive Overview "/>
+<meta name="twitter:description" content="Introduction Linear regression is a basic machine learning algorithm used for supervised learning tasks involving prediction and forecasting. It is used to model the relationship between a dependent variable (target variable) and one or more independent variables (features/predictors) by fitting a linear equation to the observed data.
+Sample Input The input to a linear regression model consists of:
+A dataset with one or more independent variables (X) and a continuous target variable (y) The data is split into training and test sets The training data is used to train the model i."/>
+<meta name="twitter:site" content="@verma_mle"/>
+
+
+
+<meta itemprop="name" content="Linear Regression : A Comprehensive Overview ">
+<meta itemprop="description" content="Introduction Linear regression is a basic machine learning algorithm used for supervised learning tasks involving prediction and forecasting. It is used to model the relationship between a dependent variable (target variable) and one or more independent variables (features/predictors) by fitting a linear equation to the observed data.
+Sample Input The input to a linear regression model consists of:
+A dataset with one or more independent variables (X) and a continuous target variable (y) The data is split into training and test sets The training data is used to train the model i."><meta itemprop="datePublished" content="2021-02-20T06:09:46-04:00" />
+<meta itemprop="dateModified" content="2021-02-20T06:09:46-04:00" />
+<meta itemprop="wordCount" content="1210"><meta itemprop="image" content="https://kovenky.github.io/images/share.png"/>
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+<style type="text/css">
+
+    h2 {size:5px;}
+    
+    </style>
+    
+        </head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Venky&#39;s Blog</h2>
+</a>
+<nav><a href="/">Blog</a>
+<a href="/projects">Projects</a>
+<a href="/laliste">D-List</a>
+<a href="https://www.twitter.com/verma_mle">Twitter</a>
+<a href="https://www.github.com/kovenky">GitHub</a>
+<a href="/about">About</a></nav>
+</header>
+  <main>
+
+<h1>Linear Regression : A Comprehensive Overview </h1>
+<p>
+  <i>
+    <time datetime='2021-02-20' pubdate>
+      Feb 20 2021
+    </time>
+  </i>
+</p>
+
+<content>
+  <h2 id="introduction">Introduction</h2>
+<p>Linear regression is a basic machine learning algorithm used for supervised learning tasks involving prediction and forecasting. It is used to model the relationship between a dependent variable (target variable) and one or more independent variables (features/predictors) by fitting a linear equation to the observed data.</p>
+<h2 id="sample-input">Sample Input</h2>
+<p>The input to a linear regression model consists of:</p>
+<ul>
+<li>A dataset with one or more independent variables (X) and a continuous target variable (y)</li>
+<li>The data is split into training and test sets</li>
+<li>The training data is used to train the model i.e. fit the regression line</li>
+<li>The test data is used to evaluate model performance</li>
+</ul>
+<p>Sample input data:</p>
+<table>
+<thead>
+<tr>
+<th>X1</th>
+<th>X2</th>
+<th>y</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.5</td>
+<td>2.1</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>0.7</td>
+<td>2.8</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>Where X1 and X2 are independent variables, y is the target variable.</p>
+<h2 id="sample-output">Sample Output</h2>
+<p>The output from a linear regression model is:</p>
+<ul>
+<li>Regression coefficients (intercept and slopes) that define the regression line</li>
+<li>Predicted values of the target variable for given inputs</li>
+<li>Performance metrics like R-squared, Mean Squared Error etc. on training and test data</li>
+</ul>
+<p>Sample output:</p>
+<p>Intercept (β0): 1.5
+Slope (β1): 0.3
+Slope (β2): 0.8</p>
+<p>R-squared: 0.75
+MSE: 0.05</p>
+<h2 id="target-variable">Target Variable</h2>
+<p>Linear regression models a continuous target variable based on its linear relationship with the predictors. The target variable must be numeric and unbounded.</p>
+<p>Common use cases are predicting home prices, stock prices, sales revenue etc based on factors like size, location, marketing budget etc.</p>
+<h2 id="problems-algorithm-handles">Problems Algorithm Handles</h2>
+<p>Linear regression is used for:</p>
+<ul>
+<li>Predictive modeling - Predicting a numeric target value based on known values of predictors</li>
+<li>Forecasting - Projecting future values of time series data based on historical patterns</li>
+<li>Exploratory data analysis - Determining relationship between dependent and independent variables</li>
+</ul>
+<p>It handles regression problems i.e. supervised learning problems involving prediction of a numeric value. It cannot handle classification problems with categorical target variables.</p>
+<h2 id="datasets">Datasets</h2>
+<p>Some commonly used datasets for linear regression are:</p>
+<ul>
+<li>Housing Data: Predicting house prices based on features like area, bedrooms etc.</li>
+<li>Stock Price Data: Modeling stock prices using factors like market cap, PE ratio etc.</li>
+<li>Student Marks Data: Predicting student exam scores based on studying hours, tuition etc.</li>
+<li>Car Price Data: Estimating car prices using attributes like mileage, age etc.</li>
+</ul>
+<p>These are available on Kaggle and other open sources.</p>
+<h2 id="full-code-example">Full Code Example</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># import libraries</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> LinearRegression
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> mean_squared_error
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># load data</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;housing.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># split data into X and y</span>
+</span></span><span style="display:flex;"><span>X <span style="color:#f92672">=</span> df[[<span style="color:#e6db74">&#39;area&#39;</span>, <span style="color:#e6db74">&#39;bedrooms&#39;</span>, <span style="color:#e6db74">&#39;age&#39;</span>]]  
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;price&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># split into train and test set</span>
+</span></span><span style="display:flex;"><span>X_train, X_test, y_train, y_test <span style="color:#f92672">=</span> train_test_split(X, y, test_size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># train the model on training set </span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> LinearRegression()
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>fit(X_train, y_train)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># make predictions on test set</span>
+</span></span><span style="display:flex;"><span>y_pred <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>predict(X_test)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># model evaluation</span>
+</span></span><span style="display:flex;"><span>rmse <span style="color:#f92672">=</span> mean_squared_error(y_test, y_pred, squared<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>print(rmse)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># print coefficients</span>
+</span></span><span style="display:flex;"><span>print(model<span style="color:#f92672">.</span>intercept_)
+</span></span><span style="display:flex;"><span>print(model<span style="color:#f92672">.</span>coef_)
+</span></span></code></pre></div><p>This loads the data, trains a LinearRegression model, makes predictions on test data, and evaluates model performance.</p>
+<h2 id="math">Math</h2>
+<p>The linear regression model defines a linear relationship between the target variable y and predictors X:</p>
+<p>y = β0 + β1X1 + β2X2 + &hellip; + βnXn</p>
+<p>Where,</p>
+<p>β0 is the intercept</p>
+<p>β1 to βn are the regression coefficients for each predictor</p>
+<p>The coefficients are estimated using the least squares method, by minimizing the sum of squared residuals between actual and predicted values of y.</p>
+<p>Various optimization algorithms like gradient descent can be used to optimize this loss function and learn the coefficients.</p>
+<h2 id="cost-function">Cost Function</h2>
+<p>The most commonly used cost function for linear regression is Mean Squared Error (MSE). It calculates the average squared difference between actual and predicted values.</p>
+<p>MSE = 1/n Σ (yi - ŷi)2</p>
+<p>Where yi is the actual value, ŷi is the predicted value and n is the number of samples.</p>
+<p>Minimizing MSE via gradient descent gives the optimized regression coefficients. Other loss functions like MAE, Huber etc can also be used.</p>
+<h2 id="real-time-applications">Real-Time Applications</h2>
+<p>Some real-world applications of linear regression include:</p>
+<ul>
+<li>Predicting housing prices based on area, bedrooms, other factors</li>
+<li>Forecasting sales, revenue based on historical data, marketing spend etc</li>
+<li>Estimating lifespan of equipment based on usage, maintenance etc.</li>
+<li>Predicting stock price trends based on financial indicators</li>
+<li>Estimating length of stay for hospital patients based on age, condition etc.</li>
+</ul>
+<p>It is easy to implement and fast to train, hence widely used for both simple and complex real-world predictions involving continuous numeric variables.</p>
+<h2 id="limitations">Limitations</h2>
+<p>Some key limitations of linear regression:</p>
+<ul>
+<li>Assumes linear relationship between target and predictors - fails for complex nonlinear relationships</li>
+<li>Prone to overfitting with many input features</li>
+<li>Outliers can skew the fitted line</li>
+<li>Cannot directly model categorical variables</li>
+<li>Makes assumptions about underlying distributions of data</li>
+<li>Cannot handle non-numeric output variables</li>
+</ul>
+<blockquote>
+<p>Due to these limitations, linear regression may not perform well on complex real-world data. Advanced algorithms like neural networks may be more suitable in such cases.</p>
+</blockquote>
+<p>Here are the additional details for Linear Regression:</p>
+<h2 id="assumptions">Assumptions</h2>
+<p>The main assumptions made by linear regression are:</p>
+<ul>
+<li>Linear relationship - The target variable has a linear relationship with the predictors</li>
+<li>Multivariate normality - The residuals are normally distributed</li>
+<li>No or little multicollinearity - The predictors are not highly correlated with each other</li>
+<li>Homoscedasticity - The variance of residuals is constant across data points</li>
+<li>Independence - The residuals are independent and identically distributed</li>
+<li>Lack of autocorrelation - The residuals are uncorrelated with each other</li>
+</ul>
+<p>These assumptions should hold true for linear regression to make reliable predictions. Violating them can result in suboptimal model performance.</p>
+<h2 id="things-to-keep-in-mind">Things to Keep in Mind</h2>
+<p>Some things to keep in mind when applying linear regression:</p>
+<ul>
+<li>Check assumptions and transform data if needed</li>
+<li>Remove outliers or use robust methods if outliers impact model</li>
+<li>Feature selection to remove irrelevant variables</li>
+<li>Address multicollinearity if predictors are correlated</li>
+<li>Regularization if model is overfitting training data</li>
+<li>Timeseries data may need autocorrelation modeling</li>
+<li>Assumptions may not hold true for complex real-world data</li>
+<li>Interpret coefficients carefully for correlations, not causations</li>
+</ul>
+<h2 id="model-evaluation-metrics">Model Evaluation Metrics</h2>
+<p>Evaluation metrics for linear regression include:</p>
+<ul>
+<li>Mean Absolute Error (MAE) - Average absolute difference between predicted and actual values. Use for human interpretability.</li>
+<li>Mean Squared Error (MSE) - Average squared difference between predicted and actual values. Sensitive to outliers.</li>
+<li>Root Mean Squared Error (RMSE) - Square root of MSE. Used for scale-dependent problems.</li>
+<li>R-squared - Statistical measure representing variance explained by the model. Values closer to 1 are better.</li>
+<li>Adjusted R-squared - Adjusted for number of predictors in the model. Useful for model selection.</li>
+</ul>
+<h2 id="avoiding-overfitting">Avoiding Overfitting</h2>
+<p>Overfitting can be avoided by:</p>
+<ul>
+<li>Removing unnecessary features using feature selection</li>
+<li>Regularization methods like L1 and L2 regularization</li>
+<li>Reducing model complexity - fewer features or polynomial terms</li>
+<li>Early stopping - stop training when validation error stops decreasing</li>
+<li>Getting more data samples to increase generalization</li>
+<li>Dropout - randomly dropping input units during training</li>
+<li>Cross-validation - evaluate model on unseen data</li>
+</ul>
+<p>The choice depends on the dataset and use case. Simpler models are less prone to overfitting than complex ones.</p>
+<h2 id="handling-multicollinearity">Handling Multicollinearity</h2>
+<p>Methods for handling multicollinearity include:</p>
+<ul>
+<li>Variance Inflation Factor (VIF) to identify and remove correlated features</li>
+<li>Principal Component Analysis (PCA) to convert correlated features into orthogonal principal components</li>
+<li>Ridge (L2) regularization constrains coefficient magnitudes</li>
+<li>Grouping correlated features into a single feature</li>
+<li>Getting more data samples to make model more robust</li>
+</ul>
+<p>VIF and regularization are commonly used. PCA also helps but loses interpretability of original features.</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

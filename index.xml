@@ -1,40 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Venky&#39;s Blog</title>
+    <title>Blog on Venky&#39;s Blog</title>
     <link>https://kovenky.github.io/</link>
-    <description>Recent content on Venky&#39;s Blog</description>
+    <description>Recent content in Blog on Venky&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Venky.</copyright>
-    <lastBuildDate>Wed, 20 Jan 2021 06:09:46 -0400</lastBuildDate><atom:link href="https://kovenky.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Feb 2021 06:09:46 -0400</lastBuildDate><atom:link href="https://kovenky.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linear Regression : A Comprehensive Overview </title>
-      <link>https://kovenky.github.io/2021/01/20/linear-regression-a-comprehensive-overview/</link>
-      <pubDate>Wed, 20 Jan 2021 06:09:46 -0400</pubDate>
+      <link>https://kovenky.github.io/2021/02/20/linear-regression-a-comprehensive-overview/</link>
+      <pubDate>Sat, 20 Feb 2021 06:09:46 -0400</pubDate>
       
-      <guid>https://kovenky.github.io/2021/01/20/linear-regression-a-comprehensive-overview/</guid>
+      <guid>https://kovenky.github.io/2021/02/20/linear-regression-a-comprehensive-overview/</guid>
       <description>Introduction Linear regression is a basic machine learning algorithm used for supervised learning tasks involving prediction and forecasting. It is used to model the relationship between a dependent variable (target variable) and one or more independent variables (features/predictors) by fitting a linear equation to the observed data.
 Sample Input The input to a linear regression model consists of:
 A dataset with one or more independent variables (X) and a continuous target variable (y) The data is split into training and test sets The training data is used to train the model i.</description>
-    </item>
-    
-    <item>
-      <title>DL Project</title>
-      <link>https://kovenky.github.io/projects/proj-1/</link>
-      <pubDate>Tue, 19 Jan 2021 06:09:46 -0400</pubDate>
-      
-      <guid>https://kovenky.github.io/projects/proj-1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DL Project</title>
-      <link>https://kovenky.github.io/projects/proj-2/</link>
-      <pubDate>Tue, 19 Jan 2021 06:09:46 -0400</pubDate>
-      
-      <guid>https://kovenky.github.io/projects/proj-2/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -47,28 +29,6 @@ A dataset with one or more independent variables (X) and a continuous target var
 She informed her parents about this relation and expressed interest that she would like to marry him.
 She shared all the details about the boy to her parents that she knew.
 After some usual family drama, parents agreed to the wedding but with one condition that only if the boy passes background check.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://kovenky.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kovenky.github.io/about/</guid>
-      <description>❋❋❋ Changing bits for good! ❋❋❋
-Hi! I&amp;rsquo;m Venky.
-I&amp;rsquo;m a machine learning engineer with experience in ETL, data wrangling, building machine learning pipelines. Currently building ML platform for data scientists.
-Contact me [kvincloud] [at] [gmail] [dot] [com]</description>
-    </item>
-    
-    <item>
-      <title>D-List</title>
-      <link>https://kovenky.github.io/laliste/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kovenky.github.io/laliste/</guid>
-      <description>La liste Things I want to do before I die. Please let me know if you have any recommendations. Inspired by Chip&amp;rsquo;s list here.
-Get a pet dog Visit Paris Live in another country Get a PhD (in CS or Cognitive Science) Scuba Dive Learn to Ski Fly an Airplane Learn to Drive a car Become a Parent Start a company Author a book Write a story and direct a short film Publish a paper in a top-tier conference Body transformation Learn to salsa Learn to play a musical instrument (tried 2x) Spend a week in the Himalayan Mountains Do a Bible tour Visit Mecca Visit Germany Travel to 50 countries Learn to speak Spanish </description>
     </item>
     
   </channel>
