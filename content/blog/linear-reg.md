@@ -1,5 +1,5 @@
 +++
-date = '2021-01-20T06:09:46-04:00'
+date = '2021-02-20T06:09:46-04:00'
 title = 'Linear Regression : A Comprehensive Overview '
 #
 # description is optional
