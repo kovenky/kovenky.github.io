@@ -2,32 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kovenky.github.io/ml-theory/2021-06-15-knn-intro/</loc>
-    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+    <loc>https://kovenky.github.io/</loc>
+    <lastmod>2021-01-20T06:09:46-04:00</lastmod>
   </url><url>
-    <loc>https://kovenky.github.io/mltheory/</loc>
-    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+    <loc>https://kovenky.github.io/2021/01/20/linear-regression-a-comprehensive-overview/</loc>
+    <lastmod>2021-01-20T06:09:46-04:00</lastmod>
   </url><url>
     <loc>https://kovenky.github.io/</loc>
-    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-20T06:09:46-04:00</lastmod>
   </url><url>
-    <loc>https://kovenky.github.io/2020/07/15/deep-learning/</loc>
-    <lastmod>2020-07-15T00:00:00+00:00</lastmod>
+    <loc>https://kovenky.github.io/projects/proj-1/</loc>
+    <lastmod>2021-01-19T06:09:46-04:00</lastmod>
   </url><url>
-    <loc>https://kovenky.github.io/</loc>
-    <lastmod>2020-07-15T00:00:00+00:00</lastmod>
+    <loc>https://kovenky.github.io/projects/proj-2/</loc>
+    <lastmod>2021-01-19T06:09:46-04:00</lastmod>
   </url><url>
-    <loc>https://kovenky.github.io/2020/06/15/holaaaa/</loc>
-    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
+    <loc>https://kovenky.github.io/2021/01/19/fun-intro-to-k-nn-algorithm/</loc>
+    <lastmod>2021-01-19T06:09:46-04:00</lastmod>
   </url><url>
-    <loc>https://kovenky.github.io/2019/06/15/set-up-dl-workstation/</loc>
-    <lastmod>2019-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kovenky.github.io/2018/06/15/tbd-more-to-come/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <loc>https://kovenky.github.io/projects/</loc>
+    <lastmod>2021-01-19T06:09:46-04:00</lastmod>
   </url><url>
     <loc>https://kovenky.github.io/about/</loc>
   </url><url>
-    <loc>https://kovenky.github.io/d-list/</loc>
+    <loc>https://kovenky.github.io/laliste/</loc>
   </url>
 </urlset>

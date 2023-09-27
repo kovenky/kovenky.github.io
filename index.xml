@@ -7,57 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Venky.</copyright>
-    <lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kovenky.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jan 2021 06:09:46 -0400</lastBuildDate><atom:link href="https://kovenky.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linear Regression : A Comprehensive Overview </title>
+      <link>https://kovenky.github.io/2021/01/20/linear-regression-a-comprehensive-overview/</link>
+      <pubDate>Wed, 20 Jan 2021 06:09:46 -0400</pubDate>
+      
+      <guid>https://kovenky.github.io/2021/01/20/linear-regression-a-comprehensive-overview/</guid>
+      <description>Introduction Linear regression is a basic machine learning algorithm used for supervised learning tasks involving prediction and forecasting. It is used to model the relationship between a dependent variable (target variable) and one or more independent variables (features/predictors) by fitting a linear equation to the observed data.
+Sample Input The input to a linear regression model consists of:
+A dataset with one or more independent variables (X) and a continuous target variable (y) The data is split into training and test sets The training data is used to train the model i.</description>
+    </item>
+    
+    <item>
+      <title>DL Project</title>
+      <link>https://kovenky.github.io/projects/proj-1/</link>
+      <pubDate>Tue, 19 Jan 2021 06:09:46 -0400</pubDate>
+      
+      <guid>https://kovenky.github.io/projects/proj-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DL Project</title>
+      <link>https://kovenky.github.io/projects/proj-2/</link>
+      <pubDate>Tue, 19 Jan 2021 06:09:46 -0400</pubDate>
+      
+      <guid>https://kovenky.github.io/projects/proj-2/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Fun Intro to K-NN Algorithm</title>
-      <link>https://kovenky.github.io/ml-theory/2021-06-15-knn-intro/</link>
-      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <link>https://kovenky.github.io/2021/01/19/fun-intro-to-k-nn-algorithm/</link>
+      <pubDate>Tue, 19 Jan 2021 06:09:46 -0400</pubDate>
       
-      <guid>https://kovenky.github.io/ml-theory/2021-06-15-knn-intro/</guid>
+      <guid>https://kovenky.github.io/2021/01/19/fun-intro-to-k-nn-algorithm/</guid>
       <description>Machine Learning Nuggets: A fun Introduction to K-NN Algorithm A girl from an orthodox family loved a boy while in college.
 She informed her parents about this relation and expressed interest that she would like to marry him.
 She shared all the details about the boy to her parents that she knew.
 After some usual family drama, parents agreed to the wedding but with one condition that only if the boy passes background check.</description>
-    </item>
-    
-    <item>
-      <title>Deep Learning</title>
-      <link>https://kovenky.github.io/2020/07/15/deep-learning/</link>
-      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kovenky.github.io/2020/07/15/deep-learning/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.
-Visit the Hugo website!</description>
-    </item>
-    
-    <item>
-      <title>holaaaa</title>
-      <link>https://kovenky.github.io/2020/06/15/holaaaa/</link>
-      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kovenky.github.io/2020/06/15/holaaaa/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.
-Visit the Hugo website!</description>
-    </item>
-    
-    <item>
-      <title>Set up DL Workstation</title>
-      <link>https://kovenky.github.io/2019/06/15/set-up-dl-workstation/</link>
-      <pubDate>Sat, 15 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kovenky.github.io/2019/06/15/set-up-dl-workstation/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.
-Visit the Hugo website!</description>
-    </item>
-    
-    <item>
-      <title>TBD - MORE TO COME</title>
-      <link>https://kovenky.github.io/2018/06/15/tbd-more-to-come/</link>
-      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://kovenky.github.io/2018/06/15/tbd-more-to-come/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.
-Visit the Hugo website!</description>
     </item>
     
     <item>
@@ -73,11 +62,11 @@ Contact me [kvincloud] [at] [gmail] [dot] [com]</description>
     </item>
     
     <item>
-      <title>La Liste</title>
-      <link>https://kovenky.github.io/d-list/</link>
+      <title>D-List</title>
+      <link>https://kovenky.github.io/laliste/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kovenky.github.io/d-list/</guid>
+      <guid>https://kovenky.github.io/laliste/</guid>
       <description>La liste Things I want to do before I die. Please let me know if you have any recommendation. Inspired by Chip&amp;rsquo;s list here.
 Get a pet dog Visit Paris Live in another country Get a PhD (in CS or Cognitive Science) Scuba Dive Learn to Ski Fly Airplane Learn to Drive a car Become a Parent Start a company Author a book Write a story and direct a short film Publish a paper in top tier conference Body transformation Learn to salsa Learn to play a music instrument (tried 2x) Spend a week in Himalayan Mountains Do a Bible tour Visit Mecca Visit Germany Travel to 50 countries Learn to speak Spanish </description>
     </item>
